@@ -13,3 +13,12 @@ div.table {
     display: block;
     margin: auto;
 }
+
+th.valor {
+    padding-left: 30%;
+}
+
+footer {
+    text-align: center;
+    font-size: small;
+}

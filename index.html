@@ -9,34 +9,52 @@
     <h1>Вклад в банке</h1>
 
     <section>
-      <div class="table">
+      <form id="form-user">
         <hr />
-
         <table>
           <tbody>
             <tr>
               <th>Сумма (руб.):</th>
-              <th style="padding-left: 30%"><input type="text" name="suma" id="suma" /></th>
+              <th class="valor">
+                <input
+                  type="number"
+                  name="suma"
+                  id="suma"
+                  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                />
+              </th>
             </tr>
             <tr>
               <th>Срок (мес.):</th>
-              <th style="padding-left: 30%"><input type="text" name="suma" id="terms" /></th>
+              <th class="valor"><input type="number" name="terms" id="terms" /></th>
             </tr>
             <tr>
               <th>Ставка (%):</th>
-              <th style="padding-left: 30%"><input type="text" name="suma" id="percentange" /></th>
+              <th class="valor"><input type="number" name="percentage" id="percentage" /></th>
             </tr>
             <tr>
               <th>Общая сумма</th>
-              <th style="padding-left: 30%"><input type="text" name="suma" id="total" /></th>
+              <th class="valor"><input type="text" name="total" id="total" disabled /></th>
             </tr>
             <tr>
               <th></th>
-              <th style="padding-left: 30%"><input type="button" value="Вычислить" /></th>
+              <th class="valor"><button type="submit" name="submit" id="submit-button" disabled>Вычислить</button></th>
             </tr>
           </tbody>
         </table>
-      </div>
+      </form>
+      <hr />
     </section>
+
+    <footer>
+      Ронни Давид Портильо Мачадо |
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+    </footer>
+
+    <img src="" alt="" srcset="" />
+
+    <script src="app.js"></script>
   </body>
 </html>

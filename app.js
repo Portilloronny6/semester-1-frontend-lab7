@@ -38,7 +38,3 @@ document.querySelector("#form-user").addEventListener("submit", function (e) {
   total.value = (suma * (percentage / 100 / 12) * terms).toFixed(3);
   e.preventDefault();
 });
-
-document.querySelector("[type='reset']").addEventListener("click", () => {
-  buttonSend.disabled = true;
-});

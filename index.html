@@ -20,18 +20,18 @@
                   type="number"
                   name="suma"
                   id="suma"
-                  step="0.01"
+                  step="0.00001"
                   oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
                 />
               </th>
             </tr>
             <tr>
               <th>Срок (мес.):</th>
-              <th class="valor"><input type="number" name="terms" id="terms" step="0.01" /></th>
+              <th class="valor"><input type="number" name="terms" id="terms" step="0.00001" /></th>
             </tr>
             <tr>
               <th>Ставка (%):</th>
-              <th class="valor"><input type="number" name="percentage" id="percentage" step="0.01" /></th>
+              <th class="valor"><input type="number" name="percentage" id="percentage" step="0.00001" /></th>
             </tr>
             <tr>
               <th>Общая сумма</th>
@@ -40,10 +40,6 @@
             <tr>
               <th></th>
               <th class="valor"><button type="submit" name="submit" id="submit-button" disabled>Вычислить</button></th>
-            </tr>
-            <tr>
-              <th></th>
-              <th class="valor"><input type="reset" value="Oчистить Поля" /></th>
             </tr>
           </tbody>
         </table>
